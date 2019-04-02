@@ -23,7 +23,7 @@ const Layout = ({ children }) => (
   <>
     {/* Set Global styles with Emotion */}
     <Global styles={globalStyles} />
-    <Header />
+    <Hero />
     <div>
       <main>{children}</main>
     </div>
