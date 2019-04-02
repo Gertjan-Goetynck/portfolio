@@ -4,9 +4,6 @@ import PropTypes from "prop-types"
 import React from "react"
 import { css, jsx } from "@emotion/core"
 
-//custom components
-import Hero from "./hero"
-
 const headerStyles = css`
   background-color: black;
   height: 100vh;
@@ -17,9 +14,7 @@ const headerStyles = css`
 `
 const Header = () => (
   <header css={headerStyles}>
-    <Hero>
-      <h1>My name is Gertjan, I am a web developer</h1>
-    </Hero>
+    <h1>My name is Gertjan, I am a web developer</h1>
   </header>
 )
 
