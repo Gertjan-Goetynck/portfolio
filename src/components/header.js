@@ -4,7 +4,7 @@ import React from "react"
 import { css, jsx } from "@emotion/core"
 
 //Import custom components
-//import Hero from "./hero"
+import Hero from "./hero"
 
 const headerStyles = css`
   background-color: black;
@@ -16,7 +16,9 @@ const headerStyles = css`
 `
 const Header = () => (
   <header css={headerStyles}>
-    <h1>My name is Gertjan, I am a web developer</h1>
+    <Hero>
+      <h1>My name is Gertjan, I am a web developer</h1>
+    </Hero>
   </header>
 )
 
