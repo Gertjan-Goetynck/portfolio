@@ -4,7 +4,7 @@ import React from "react"
 import { css, jsx } from "@emotion/core"
 
 //Import custom components
-import Hero from "./hero"
+import Hero from "./Hero"
 
 const headerStyles = css`
   background-color: black;
