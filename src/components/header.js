@@ -16,9 +16,8 @@ const headerStyles = css`
 `
 const Header = () => (
   <header css={headerStyles}>
-    <Hero>
-      <h1>My name is Gertjan, I am a web developer</h1>
-    </Hero>
+    <Hero />
+    <h1>My name is Gertjan, I am a web developer</h1>
   </header>
 )
 
