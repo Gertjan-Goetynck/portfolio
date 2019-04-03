@@ -12,6 +12,7 @@ import { fonts } from "../utils/styleGuide"
 import "typeface-montserrat"
 
 import Header from "./header"
+import Footer from "./header"
 
 const globalStyles = css`
   html {
@@ -33,6 +34,7 @@ const Layout = ({ children }) => (
     <div>
       <main>{children}</main>
     </div>
+    <Footer />
   </>
 )
 
