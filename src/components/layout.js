@@ -14,6 +14,24 @@ import "typeface-montserrat"
 import Header from "./header"
 import Footer from "./header"
 
+const contactLinks = [
+  {
+    type: "email",
+    link: "mailto:gertjan@goetynck.com",
+    image: "email.svg",
+  },
+  {
+    type: "linkedin",
+    link: "https://www.linkedin.com/in/gertjan-goetynck-038a2478/",
+    image: "linkedin.svg",
+  },
+  {
+    type: "github",
+    link: "https://github.com/Gertjan-Goetynck",
+    image: "github.svg",
+  },
+]
+
 const globalStyles = css`
   html {
     font-family: "Montserrat", sans-serif;
