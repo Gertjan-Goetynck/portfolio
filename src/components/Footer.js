@@ -8,7 +8,7 @@ const footerStyle = css`
 
 const Footer = () => (
   <footer css={footerStyle}>
-    <ContactList contactLinks={contactLinks} />
+    <p>Test</p>
   </footer>
 )
 

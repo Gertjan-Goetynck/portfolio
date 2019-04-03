@@ -12,7 +12,7 @@ import { fonts } from "../utils/styleGuide"
 import "typeface-montserrat"
 
 import Header from "./header"
-import Footer from "./header"
+import Footer from "./footer"
 
 const contactLinks = [
   {
