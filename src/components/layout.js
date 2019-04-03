@@ -4,19 +4,20 @@ import { Global, css } from "@emotion/core"
 
 //Normalizes css
 import "normalize.css"
+
+//Import styleguide
+import { fonts } from "../utils/styleGuide"
+
 //Fonts
 import "typeface-montserrat"
-import "typeface-lato"
 
 import Header from "./header"
 
 const globalStyles = css`
-  body {
+  html {
     font-family: "Montserrat", sans-serif;
+    font-size: ${fonts.sizes.base};
     font-weight: 400;
-  }
-  h1 {
-    font-family: "lato", sans-serif;
   }
 `
 const Layout = ({ children }) => (
