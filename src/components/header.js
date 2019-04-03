@@ -16,24 +16,25 @@ const headerStyles = css`
   position: relative;
   background-color: black;
   height: 100vh;
-  h1 {
-    margin-top: 0;
-    color: ${colors.white};
-    font-size: ${fonts.sizes.headingPrimary};
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    span {
-      color: ${colors.mainColor};
-    }
+`
+
+const titleStyles = css`
+  margin-top: 0;
+  color: ${colors.white};
+  font-size: ${fonts.sizes.headingPrimary};
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  span {
+    color: ${colors.mainColor};
   }
 `
 const Header = () => (
   <header css={headerStyles}>
     <Hero>
       <Typist>
-        <h1>
+        <h1 css={titleStyles}>
           Hi, I'm Gertjan!
           <Typist.Delay ms={400} />
           <br /> I'm a <span>PHP</span>

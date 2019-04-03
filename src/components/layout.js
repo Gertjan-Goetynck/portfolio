@@ -19,6 +19,10 @@ const globalStyles = css`
     font-size: ${fonts.sizes.base};
     font-weight: 400;
   }
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
 `
 const Layout = ({ children }) => (
   <>

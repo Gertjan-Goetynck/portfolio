@@ -4,23 +4,24 @@ import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { css, jsx } from "@emotion/core"
 
-const heroStyles = css`
+const heroContainerStyles = css`
   position: relative;
   height: 100vh;
-  .heroImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-  }
-  .heroOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+`
+
+const heroImageStyles = css`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+`
+const heroOverlayStyles = css`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 `
 
 const Hero = ({ children }) => (
@@ -37,9 +38,9 @@ const Hero = ({ children }) => (
       }
     `}
     render={data => (
-      <div className="heroContainer" css={heroStyles}>
-        <Image className="heroImage" fluid={data.file.childImageSharp.fluid} />
-        <div className="heroOverlay">{children}</div>
+      <div css={heroContainerStyles}>
+        <Image css={heroImageStyles} fluid={data.file.childImageSharp.fluid} />
+        <div css={heroOverlayStyles}>{children}</div>
       </div>
     )}
   />
