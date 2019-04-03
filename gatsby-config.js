@@ -1,5 +1,3 @@
-import { colors } from "utils/styleGuide"
-
 module.exports = {
   siteMetadata: {
     title: `Goetynck Portfolio`,
@@ -24,8 +22,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: $colors.mainColor,
-        theme_color: $colors.mainColor,
+        background_color: `#00D4D4`,
+        theme_color: `#00D4D4`,
         display: `minimal-ui`,
       },
     },
