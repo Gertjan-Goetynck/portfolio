@@ -1,14 +1,9 @@
 import React from "react"
-import { css } from "@emotion/core"
-
-const footerStyle = css`
-  background-color: #404040;
-`
 
 const Footer = () => (
-  <footer css={footerStyle}>
+  <div>
     <p>Test</p>
-  </footer>
+  </div>
 )
 
 export default Footer
