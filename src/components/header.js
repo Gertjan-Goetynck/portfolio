@@ -10,8 +10,6 @@ import { colors, fonts } from "../utils/styleGuide"
 //Import custom components
 import Hero from "./Hero"
 
-console.log(colors)
-
 const headerStyles = css`
   position: relative;
   background-color: black;

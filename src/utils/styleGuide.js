@@ -6,6 +6,6 @@ export const colors = {
 export const fonts = {
   sizes: {
     base: "62.5%", //Sets size of 1 rem to 10px (10/16)
-    headingPrimary: "6rem",
+    headingPrimary: "5rem",
   },
 }
