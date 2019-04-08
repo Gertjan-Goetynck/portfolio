@@ -9,11 +9,13 @@ import { colors, fonts } from "../utils/styleGuide"
 
 //Import custom components
 import Hero from "./Hero"
+import CTA from "./CallToActionBtn"
 
 const headerStyles = css`
   position: relative;
   background-color: ${colors.dark1};
   height: 100vh;
+  width: 100%;
 `
 
 const titleStyles = css`
@@ -21,13 +23,14 @@ const titleStyles = css`
   color: ${colors.light1};
   font-size: ${fonts.sizes.headingPrimary};
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   span {
     color: ${colors.mainColor};
   }
 `
+
 const Header = () => (
   <header css={headerStyles}>
     <Hero>
@@ -43,6 +46,11 @@ const Header = () => (
           <Typist.Backspace count={5} delay={300} /> <span>Web</span> developer
         </h1>
       </Typist>
+      <CTA
+        text={"About me"}
+        horizontalPosition={"50%"}
+        verticalPosition={"55%"}
+      />
     </Hero>
   </header>
 )

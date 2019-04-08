@@ -7,7 +7,10 @@ import { colors } from "../utils/styleGuide"
 import ContactList from "./ContactList"
 
 const footerStyles = css`
+  position: relative;
   background-color: ${colors.dark1};
+  margin-top: -80px;
+  z-index: 200000;
 `
 
 const Footer = props => (
