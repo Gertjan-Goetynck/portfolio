@@ -1,5 +1,5 @@
 import React from "react"
-import ContactListItem from "./contactlistitem"
+import ContactListItem from "./ContactListItem"
 import { css } from "@emotion/core"
 
 const contactListStyle = css`
