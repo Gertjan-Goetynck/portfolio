@@ -1,7 +1,7 @@
 import React from "react"
-import Email from "./emailsvg"
-import Github from "./githubsvg"
-import Linkedin from "./linkedinsvg"
+import Email from "./EmailSVG"
+import Github from "./GithubSVG"
+import Linkedin from "./LinkedinSVG"
 
 const Icon = props => {
   switch (props.type) {
