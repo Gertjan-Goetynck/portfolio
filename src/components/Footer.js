@@ -1,50 +1,19 @@
 /** @jsx jsx */
-import { Link } from "gatsby"
 import React from "react"
 import { css, jsx } from "@emotion/core"
-import Typist from "react-typist"
 
 //Import styleguide
-import { colors, fonts } from "../utils/styleGuide"
+import { colors } from "../utils/styleGuide"
+import ContactList from "./ContactList"
 
-//Import custom components
-import Hero from "./Hero"
-
-const headerStyles = css`
-  position: relative;
-  background-color: black;
-  height: 100vh;
+const footerStyles = css`
+  background-color: ${colors.dark1};
 `
 
-const titleStyles = css`
-  margin-top: 0;
-  color: ${colors.white};
-  font-size: ${fonts.sizes.headingPrimary};
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  span {
-    color: ${colors.mainColor};
-  }
-`
-const Footer = () => (
-  <header css={headerStyles}>
-    <Hero>
-      <Typist>
-        <h1 css={titleStyles}>
-          Hi, I'm Gertjan!
-          <Typist.Delay ms={400} />
-          <br /> I'm a <span>PHP</span>
-          <Typist.Backspace count={3} delay={300} />
-          <span>JavaScript</span>
-          <Typist.Backspace count={10} delay={300} />
-          <span>React</span>
-          <Typist.Backspace count={5} delay={300} /> <span>Web</span> developer
-        </h1>
-      </Typist>
-    </Hero>
-  </header>
+const Footer = props => (
+  <footer css={footerStyles}>
+    <ContactList contactLinks={props.contactLinks} />
+  </footer>
 )
 
 export default Footer

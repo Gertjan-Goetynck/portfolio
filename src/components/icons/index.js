@@ -6,11 +6,11 @@ import Linkedin from "./linkedinsvg"
 const Icon = props => {
   switch (props.type) {
     case "github":
-      return <Github />
+      return <Github color={props.color} hoverColor={props.hoverColor} />
     case "email":
-      return <Email />
+      return <Email color={props.color} hoverColor={props.hoverColor} />
     case "linkedin":
-      return <Linkedin />
+      return <Linkedin color={props.color} hoverColor={props.hoverColor} />
   }
 }
 

@@ -12,13 +12,13 @@ import Hero from "./Hero"
 
 const headerStyles = css`
   position: relative;
-  background-color: black;
+  background-color: ${colors.dark1};
   height: 100vh;
 `
 
 const titleStyles = css`
   margin-top: 0;
-  color: ${colors.white};
+  color: ${colors.light1};
   font-size: ${fonts.sizes.headingPrimary};
   position: absolute;
   top: 50%;

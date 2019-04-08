@@ -4,7 +4,10 @@ import { css } from "@emotion/core"
 
 const contactListStyle = css`
   margin-bottom: 0;
+  padding: 5rem 0;
+  list-style: none;
   display: flex;
+  justify-content: space-evenly;
 `
 
 const ContactList = props => (

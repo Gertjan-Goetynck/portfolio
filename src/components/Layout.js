@@ -34,6 +34,9 @@ const contactLinks = [
 
 const globalStyles = css`
   html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: "Montserrat", sans-serif;
     font-size: ${fonts.sizes.base};
     font-weight: 400;
@@ -52,7 +55,7 @@ const Layout = ({ children }) => (
     <div>
       <main>{children}</main>
     </div>
-    <Footer />
+    <Footer contactLinks={contactLinks} />
   </>
 )
 

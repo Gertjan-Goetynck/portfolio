@@ -1,6 +1,10 @@
 export const colors = {
   mainColor: "#00D4D4",
-  white: "#F3F3F3",
+  light1: "#F3F3F3",
+  dark1: "#303030",
+  // dark2: "#808080",
+  dark2: "#808080",
+  dark3: "#bababa",
 }
 
 export const fonts = {
