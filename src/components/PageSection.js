@@ -4,12 +4,20 @@ import { css } from "@emotion/core"
 import { colors } from "../utils/styleGuide"
 
 const styledSection = css`
-  position: relative;
-  padding-top: 10rem;
-  min-height: 80vh;
-  :not(:first-of-type) {
-    margin-top: -80px;
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color: #7ba2a2;
+    margin-bottom: 2rem;
   }
+  > div {
+    max-width: 110rem;
+    margin: 0 auto;
+  }
+  position: relative;
+  padding-top: 7rem;
+  min-height: 80vh;
   padding-bottom: 15rem;
   :nth-of-type(2n) {
     background-color: ${colors.mainColorDark};
@@ -17,6 +25,9 @@ const styledSection = css`
     border-top-left-radius: 40px;
 
     transform: skewY(-1deg);
+    h2 {
+      color: ${colors.light1};
+    }
     > * {
       transform: skewY(1deg);
     }
@@ -46,7 +57,7 @@ const styledSection = css`
 
 const PageSection = ({ children, name }) => (
   <section id={name} css={styledSection}>
-    {children}
+    <div>{children}</div>
   </section>
 )
 

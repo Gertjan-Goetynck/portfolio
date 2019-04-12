@@ -37,7 +37,7 @@ const CallToActionBtn = props => (
       }
     `}
   >
-    <a href="">
+    <a href={props.linkTo}>
       <rect x="5" y="5" rx="35px" ry="35px" width="200px" height="70px" />
       <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle">
         {props.text}

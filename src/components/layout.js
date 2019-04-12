@@ -33,7 +33,13 @@ const contactLinks = [
 ]
 
 const globalStyles = css`
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
   html {
+    box-sizing: border-box;
     height: 100%;
     margin: 0;
     padding: 0;

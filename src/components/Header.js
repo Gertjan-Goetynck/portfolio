@@ -50,6 +50,7 @@ const Header = () => (
         text={"About me"}
         horizontalPosition={"50%"}
         verticalPosition={"55%"}
+        linkTo={"#about"}
       />
     </Hero>
   </header>
