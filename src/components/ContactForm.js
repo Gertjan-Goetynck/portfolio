@@ -8,7 +8,7 @@ const formStyles = css`
     position: relative;
     margin-bottom: 2rem;
   }
-  label {
+  label span {
     position: absolute;
     top: -3rem;
     left: 3rem;
@@ -42,7 +42,7 @@ const formStyles = css`
         border-left: 8px solid red;
       }
     }
-    :placeholder-shown + label {
+    :placeholder-shown + label span {
       opacity: 0;
       visibility: hidden;
       transform: translateY(4rem);
@@ -68,37 +68,43 @@ const ContactForm = () => (
     <h2>Reach out</h2>
     <form name="contact" method="POST" data-netlify="true" css={formStyles}>
       <div>
-        <input
-          name="name"
-          id="name"
-          aria-label="name"
-          required
-          placeholder="Name"
-          type="text"
-        />
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name">
+          <input
+            name="name"
+            id="name"
+            aria-labelledby="name"
+            required
+            placeholder="Name"
+            type="text"
+          />
+          <span>Name</span>
+        </label>
       </div>
       <div>
-        <input
-          name="email"
-          id="email"
-          aria-label="email"
-          required
-          placeholder="Email"
-          type="email"
-        />
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email">
+          <input
+            name="email"
+            id="email"
+            aria-label="email"
+            required
+            placeholder="Email"
+            type="email"
+          />
+          <span>Email</span>
+        </label>
       </div>
       <div>
-        <textarea
-          name="message"
-          id="message"
-          aria-label="message"
-          required
-          rows="20"
-          placeholder="Your message"
-        />
-        <label htmlFor="message">Your message</label>
+        <label htmlFor="message">
+          <textarea
+            name="message"
+            id="message"
+            aria-label="message"
+            required
+            rows="20"
+            placeholder="Your message"
+          />
+          <span>Your message</span>
+        </label>
       </div>
       <input type="submit" value="Submit" />
     </form>

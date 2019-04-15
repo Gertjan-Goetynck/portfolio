@@ -1,7 +1,7 @@
 import React from "react"
 import { css } from "@emotion/core"
 
-import { colors } from "../utils/styleGuide"
+import { colors, breakpoints } from "../utils/styleGuide"
 
 const styledSection = css`
   h2 {
@@ -14,6 +14,9 @@ const styledSection = css`
   > div {
     max-width: 110rem;
     margin: 0 auto;
+    @media (${breakpoints.large}) {
+      padding: 0 5rem 0 5rem;
+    }
   }
   position: relative;
   padding-top: 7rem;
