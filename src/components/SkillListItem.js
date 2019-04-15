@@ -15,7 +15,7 @@ const SkillListItemStyle = css`
 `
 const SkillListItem = props => (
   <li css={SkillListItemStyle}>
-    <a href={props.url} target="_blank">
+    <a href={props.url} rel="noreferrer" target="_blank">
       <Icon name={props.name} />
     </a>
   </li>

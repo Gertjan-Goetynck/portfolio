@@ -18,3 +18,7 @@ export const fonts = {
 export const transitions = {
   hoverOpacity: "opacity .4s",
 }
+
+export const breakpoints = {
+  large: "max-width:73.75em",
+}
