@@ -66,7 +66,13 @@ const formStyles = css`
 const ContactForm = () => (
   <React.Fragment>
     <h2>Reach out</h2>
-    <form name="contactMe" method="POST" data-netlify="true" css={formStyles}>
+    <form
+      name="contact"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      css={formStyles}
+    >
       <div>
         <input name="name" id="name" required placeholder="Name" type="text" />
         <label htmlFor="name">Name</label>
@@ -91,7 +97,7 @@ const ContactForm = () => (
         />
         <label htmlFor="message">Your message</label>
       </div>
-      <input type="submit" value="Send message" />
+      <input type="submit" value="Submit" />
     </form>
   </React.Fragment>
 )
