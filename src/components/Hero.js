@@ -22,8 +22,6 @@ const heroOverlayStyles = css`
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
 `
 
 const Hero = ({ children }) => (

@@ -19,15 +19,13 @@ const headerStyles = css`
 `
 
 const titleStyles = css`
-  padding-top: 55%;
-  width: 54rem;
   color: ${colors.light1};
   font-size: ${fonts.sizes.headingPrimary};
   line-height: 7rem;
-  /* position: absolute;
+  position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
 
   span {
     color: ${colors.mainColor};
