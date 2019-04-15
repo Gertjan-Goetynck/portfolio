@@ -7,9 +7,6 @@ const EmailSVG = props => (
     viewBox="0 0 100 100"
     css={css`
       fill: ${props.color};
-      :hover {
-        fill: ${props.hoverColor};
-      }
     `}
     xmlns="http://www.w3.org/2000/svg"
   >

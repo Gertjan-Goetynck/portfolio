@@ -12,11 +12,11 @@ import Sass from "./SassSVG"
 const Icon = props => {
   switch (props.type || props.name) {
     case "github":
-      return <Github color={props.color} hoverColor={props.hoverColor} />
+      return <Github color={props.color} />
     case "email":
-      return <Email color={props.color} hoverColor={props.hoverColor} />
+      return <Email color={props.color} />
     case "linkedin":
-      return <Linkedin color={props.color} hoverColor={props.hoverColor} />
+      return <Linkedin color={props.color} />
     case "CSS3":
       return <CSS3 />
     case "HTML5":
