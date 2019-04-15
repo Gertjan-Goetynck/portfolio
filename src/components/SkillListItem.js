@@ -1,11 +1,12 @@
 import React from "react"
 import Icon from "./icons"
 import { css } from "@emotion/core"
+import { transitions } from "../utils/styleGuide"
 
 const SkillListItemStyle = css`
   svg {
     width: 30rem;
-    transition: all 0.4s;
+    transition: ${transitions.hoverOpacity};
     opacity: 0.6;
     :hover {
       opacity: 1;

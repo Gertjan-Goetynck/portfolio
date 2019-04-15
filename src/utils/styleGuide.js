@@ -14,3 +14,7 @@ export const fonts = {
     headingPrimary: "5rem",
   },
 }
+
+export const transitions = {
+  hoverOpacity: "opacity .4s",
+}

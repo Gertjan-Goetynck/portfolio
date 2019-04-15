@@ -54,7 +54,7 @@ const globalStyles = css`
   }
 `
 const Layout = ({ children }) => (
-  <>
+  <React.Fragment>
     {/* Set Global styles with Emotion */}
     <Global styles={globalStyles} />
     <Header />
@@ -62,7 +62,7 @@ const Layout = ({ children }) => (
       <main>{children}</main>
     </div>
     <Footer contactLinks={contactLinks} />
-  </>
+  </React.Fragment>
 )
 
 Layout.propTypes = {

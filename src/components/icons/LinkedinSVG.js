@@ -7,9 +7,6 @@ const LinkedinSVG = props => (
     xmlns="http://www.w3.org/2000/svg"
     css={css`
       fill: ${props.color};
-      :hover {
-        fill: ${props.hoverColor};
-      }
     `}
   >
     <g>
