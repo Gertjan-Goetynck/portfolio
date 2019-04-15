@@ -1,6 +1,7 @@
 import React from "react"
 import SkillListItem from "./SkillListItem"
 import { css } from "@emotion/core"
+import { breakpoints } from "../utils/styleGuide"
 
 const SkillListStyles = css`
   padding: 0;
@@ -8,6 +9,9 @@ const SkillListStyles = css`
   flex-wrap: wrap;
   list-style: none;
   justify-content: space-between;
+  @media (${breakpoints.medium}) {
+    justify-content: center;
+  }
 `
 
 const skills = [

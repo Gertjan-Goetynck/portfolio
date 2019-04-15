@@ -6,6 +6,7 @@ const CallToActionBtn = props => (
       position: absolute;
       left: ${props.horizontalPosition};
       top: ${props.verticalPosition};
+      margin-top: 10rem;
       transform: translate(
         -${props.horizontalPosition},
         -${props.verticalPosition}

@@ -45,6 +45,7 @@ const globalStyles = css`
     padding: 0;
     font-family: "Montserrat", sans-serif;
     font-size: ${fonts.sizes.base};
+    line-height: 1.8rem;
     font-weight: 400;
   }
   p,

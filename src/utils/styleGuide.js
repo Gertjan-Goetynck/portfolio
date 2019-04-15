@@ -12,6 +12,8 @@ export const fonts = {
   sizes: {
     base: "62.5%", //Sets size of 1 rem to 10px (10/16)
     headingPrimary: "5rem",
+    headingPrimaryMedium: "4rem",
+    headingPrimarySmall: "5rem",
   },
 }
 
@@ -21,4 +23,6 @@ export const transitions = {
 
 export const breakpoints = {
   large: "max-width:73.75em",
+  medium: "max-width:43.75em",
+  small: "max-width:31.25em ",
 }
