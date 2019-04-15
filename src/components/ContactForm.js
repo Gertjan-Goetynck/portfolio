@@ -68,13 +68,21 @@ const ContactForm = () => (
     <h2>Reach out</h2>
     <form name="contact" method="POST" data-netlify="true" css={formStyles}>
       <div>
-        <input name="name" id="name" required placeholder="Name" type="text" />
+        <input
+          name="name"
+          id="name"
+          aria-label="name"
+          required
+          placeholder="Name"
+          type="text"
+        />
         <label htmlFor="name">Name</label>
       </div>
       <div>
         <input
           name="email"
           id="email"
+          aria-label="email"
           required
           placeholder="Email"
           type="email"
@@ -85,6 +93,7 @@ const ContactForm = () => (
         <textarea
           name="message"
           id="message"
+          aria-label="message"
           required
           rows="20"
           placeholder="Your message"
