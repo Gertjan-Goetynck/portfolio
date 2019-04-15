@@ -16,7 +16,11 @@ const contactListItemStyle = css`
 
 const ContactListItem = props => (
   <li css={contactListItemStyle}>
-    <a href={props.link} target={props.type !== "email" ? "_blank" : "_self"}>
+    <a
+      href={props.link}
+      rel="noreferrer"
+      target={props.type !== "email" ? "_blank" : "_self"}
+    >
       <Icon type={props.type} color={colors.dark2} />
     </a>
   </li>
