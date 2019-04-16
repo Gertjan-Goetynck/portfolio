@@ -61,6 +61,6 @@ I have chosen to use Gatsby because of the many speed and size benefits it offer
 
 ### Netlify
 
-Netlify offers free hosting for static sides.
+Netlify allows developers to host both static sites and sites using Static Site Generators for free.
 
 Some of the features it offers include form handling, continuous deployment through git, DNS management, and many more.
