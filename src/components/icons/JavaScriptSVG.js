@@ -1,20 +1,14 @@
 import React from "react"
 
 const JavaScriptSVG = () => (
-  <svg
-    id="Lager_1"
-    // style="enable-background:new 0 0 128 128;"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 128 128"
-  >
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
     <g>
       <g>
         <g>
           <circle cx="64" cy="64" r="50" fill="#F0DB4F" />
         </g>
       </g>
-      <g id="Layer_1_1_">
+      <g>
         <g>
           <g>
             <path

@@ -15,7 +15,12 @@ const SkillListItemStyle = css`
 `
 const SkillListItem = props => (
   <li css={SkillListItemStyle}>
-    <a href={props.url} rel="noreferrer" target="_blank">
+    <a
+      href={props.url}
+      rel="noreferrer"
+      target="_blank"
+      aria-label={props.name}
+    >
       <Icon name={props.name} />
     </a>
   </li>
