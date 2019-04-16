@@ -20,6 +20,7 @@ const ContactListItem = props => (
       href={props.link}
       rel="noreferrer"
       target={props.type !== "email" ? "_blank" : "_self"}
+      aria-label={props.type}
     >
       <Icon type={props.type} color={colors.dark2} />
     </a>
