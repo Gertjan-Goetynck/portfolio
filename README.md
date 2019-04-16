@@ -58,3 +58,9 @@ gatsby serve
 Gatsby is a Static Page Generator built on the ReactJS framework.
 
 I have chosen to use Gatsby because of the many speed and size benefits it offers when building a React site that does not have a lot of dynamic content.
+
+### Netlify
+
+Netlify offers free hosting for static sides.
+
+Some of the features it offers include form handling, continuous deployment through git, DNS management, and many more.
