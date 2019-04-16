@@ -5,7 +5,7 @@ import { css, jsx } from "@emotion/core"
 import Typist from "react-typist"
 
 //Import styleguide
-import { colors, fonts } from "../utils/styleGuide"
+import { colors, fonts, breakpoints } from "../utils/styleGuide"
 
 //Import custom components
 import Hero from "./Hero"
@@ -19,13 +19,14 @@ const headerStyles = css`
 `
 
 const titleStyles = css`
-  margin-top: 0;
   color: ${colors.light1};
   font-size: ${fonts.sizes.headingPrimary};
+  line-height: 7rem;
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   span {
     color: ${colors.mainColor};
   }

@@ -17,6 +17,9 @@ const styledSection = css`
     @media (${breakpoints.large}) {
       padding: 0 5rem 0 5rem;
     }
+    @media (${breakpoints.small}) {
+      padding: 0 2rem 0 2rem;
+    }
   }
   position: relative;
   padding-top: 7rem;

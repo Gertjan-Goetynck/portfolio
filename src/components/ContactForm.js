@@ -1,6 +1,6 @@
 import React from "react"
 import { css } from "@emotion/core"
-import { colors } from "../utils/styleGuide"
+import { colors, breakpoints } from "../utils/styleGuide"
 import "typeface-montserrat"
 
 const formStyles = css`
@@ -31,6 +31,9 @@ const formStyles = css`
     width: 50%;
     display: block;
     transition: all 0.3s;
+    @media (${breakpoints.medium}) {
+      width: 100%;
+    }
     ::-webkit-input-placeholder {
       font-family: "Montserrat", sans-serif;
       color: ${colors.mainColorDark};
@@ -42,7 +45,7 @@ const formStyles = css`
         border-left: 8px solid red;
       }
     }
-    :placeholder-shown + label span {
+    :placeholder-shown + span {
       opacity: 0;
       visibility: hidden;
       transform: translateY(4rem);
